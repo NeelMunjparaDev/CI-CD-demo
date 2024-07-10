@@ -11,7 +11,7 @@ pipeline {
         stage('Build and Test') {
             steps {
                 // Set up virtual environment (if needed)
-                sh 'python -m venv venv'
+                sh 'python3 -m venv venv'
                 sh '. venv/bin/activate'
                 
                 // Install dependencies (if any)
