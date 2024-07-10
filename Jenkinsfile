@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout code from GitHub repository
-                git 'https://github.com/NeelMunjparaDev/CI-CD-demo.git
+                git 'https://github.com/NeelMunjparaDev/CI-CD-demo.git'
             }
         }
         stage('Build and Test') {
