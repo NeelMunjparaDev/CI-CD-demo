@@ -28,7 +28,7 @@ pipeline {
             steps {
                 script {
                     // Merge changes into main branch if build is successful
-                    def currentBranch = env.BRANCH_NAME
+                    def currentBranch = env.main
                     if (currentBuild.result == 'SUCCESS') {
                         sh "git checkout main"
                         sh "git merge ${currentBranch}"
